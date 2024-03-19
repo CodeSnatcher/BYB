@@ -303,7 +303,7 @@
         for ($i = 0; $i < count($courses_array); $i++) {
         ?>
          
-            <div class="col-md-3">
+            <div class="col-md-2">
               <a href="uni_list.php" class="h-100">
                 <div class="mb-3 rounded-5">
                   <div class="bg-image" style="max-width: 262px !important; position:relative; margin: 0px auto; border-radius: 10px !important">
