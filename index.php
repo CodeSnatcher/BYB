@@ -136,7 +136,7 @@
                 <option selected>Select budget</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="3">three</option>
               </select>
             </div>
             <div class="col-md-2">
