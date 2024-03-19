@@ -305,7 +305,7 @@
          
             <div class="col-md-3">
               <a href="uni_list.php" class="h-100">
-                <div class="mb-3">
+                <div class="mb-3 rounded-5">
                   <div class="bg-image" style="max-width: 262px !important; position:relative; margin: 0px auto; border-radius: 10px !important">
                     <img src="./assets/images/unides/uni_5.jpg" class="img-fluid d-block mx-auto" />
                     <div class="position-absolute bottom-0  w-100" style="background-color: rgb(12 12 12 / 77%);">
