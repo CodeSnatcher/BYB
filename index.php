@@ -309,7 +309,7 @@
                   <div class="bg-image" style="max-width: 262px !important; position:relative; margin: 0px auto; border-radius: 10px !important">
                     <img src="./assets/images/unides/uni_5.jpg" class="img-fluid d-block mx-auto" />
                     <div class="position-absolute bottom-0  w-100" style="background-color: rgb(12 12 12 / 77%);">
-                      <p class="p-2 m-0 text-white" style="font-size: 12px;">Best <?php echo $courses_array[$i]['course_category']; ?> Colleges in India</p>
+                      <p class="p-2 m-0 text-white" style="font-size: 12px;">Best MBA Colleges in India</p>
                     </div>
                   </div>
                 </div>
