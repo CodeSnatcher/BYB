@@ -1,0 +1,184 @@
+[20-Nov-2023 13:39:26 UTC] PHP Fatal error:  Cannot use [] for reading in /home2/bringyourbuddy/public_html/student/storage/framework/views/30708a0e311af2019d2172935500aab7.php on line 452
+[03-Jan-2024 06:23:35 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/bringyourbuddy/public_html/student/app/Http/Controllers/CourseController.php on line 3
+[29-Jan-2024 10:25:51 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:34:01 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:34:06 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:34:26 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:34:37 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:34:44 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:34:49 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:35:03 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:35:33 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:41:21 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:43:38 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:56:30 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:59:26 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350
+[29-Jan-2024 10:59:55 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:350
+Stack trace:
+#0 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic()
+#1 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(697): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(678): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(609): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#4 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(515): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#5 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(432): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#6 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(509): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(148): Illuminate\Foundation\Http\Kernel->renderException()
+#8 /home/bringyourbuddy/public_html/student/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#9 {main}
+  thrown in /home/bringyourbuddy/public_html/student/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 350

@@ -1,0 +1,164 @@
+[22-Nov-2023 18:51:15 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home2/bringyourbuddy/public_html/phpScript/login_access.php on line 51
+[23-Nov-2023 12:58:15 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:58
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(58): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(49): DB_Functions->get_column_data()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 58
+[23-Nov-2023 13:23:01 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:58
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(58): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(48): DB_Functions->get_row_data()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 58
+[23-Nov-2023 13:24:44 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:58
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(58): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(48): DB_Functions->get_row_data()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 58
+[23-Nov-2023 13:29:34 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:58
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(58): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(48): DB_Functions->get_row_data()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 58
+[23-Nov-2023 13:49:17 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Himachal Pradesh')Sarkaghat')Male')Computer Application')' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:79
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(79): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(79): DB_Functions->enquiry()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 79
+[23-Nov-2023 14:03:05 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Himachal Pradesh')Sarkaghat')Male')Computer Application')' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:79
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(79): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(79): DB_Functions->enquiry()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 79
+[23-Nov-2023 14:31:53 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Himachal Pradesh')Sarkaghat')Male')Computer Application')' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:79
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(79): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(79): DB_Functions->enquiry()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 79
+[23-Nov-2023 14:41:23 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Himachal Pradesh')Sarkaghat')Male')Computer Application')' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:79
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(79): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(79): DB_Functions->enquiry()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 79
+[23-Nov-2023 15:25:18 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/login_access.php on line 101
+[23-Nov-2023 15:25:18 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:98
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(98): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(101): DB_Functions->contact()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 98
+[23-Nov-2023 15:27:15 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/login_access.php on line 101
+[23-Nov-2023 15:27:15 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:98
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(98): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/login_access.php(101): DB_Functions->contact()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 98
+[23-Nov-2023 15:29:50 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/login_access.php on line 101
+[23-Nov-2023 15:32:21 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/login_access.php on line 101
+[23-Nov-2023 15:33:50 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/login_access.php on line 101
+[23-Nov-2023 15:47:13 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 101
+[24-Nov-2023 08:53:45 Asia/Calcutta] PHP Warning:  Undefined variable $name in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 101
+[24-Nov-2023 17:15:53 Asia/Calcutta] PHP Warning:  Undefined array key "uni_password" in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 127
+[24-Nov-2023 17:15:53 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'uni_code' in 'field list' in /home/bringyourbuddy/public_html/phpScript/db_functions.php:62
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(62): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/controllers.php(142): DB_Functions->university_register()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 62
+[25-Nov-2023 19:38:40 Asia/Calcutta] PHP Warning:  Undefined array key "uni_password" in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 127
+[25-Nov-2023 19:38:40 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'uni_code' in 'field list' in /home/bringyourbuddy/public_html/phpScript/db_functions.php:61
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(61): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/controllers.php(142): DB_Functions->university_register()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 61
+[28-Dec-2023 11:21:00 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined method DB_Functions::get_row_data() in /home/bringyourbuddy/public_html/phpScript/controllers.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 48
+[28-Dec-2023 11:23:11 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined method DB_Functions::get_row_data() in /home/bringyourbuddy/public_html/phpScript/controllers.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 48
+[28-Dec-2023 11:26:38 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined method DB_Functions::get_row_data() in /home/bringyourbuddy/public_html/phpScript/controllers.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 48
+[28-Dec-2023 11:35:58 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined method DB_Functions::get_row_data() in /home/bringyourbuddy/public_html/phpScript/controllers.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 48
+[28-Dec-2023 13:00:56 Asia/Calcutta] PHP Warning:  Undefined variable $mail in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[11-Jan-2024 22:43:15 Asia/Calcutta] PHP Warning:  Undefined array key "ref_code" in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 55
+[11-Jan-2024 22:43:15 Asia/Calcutta] PHP Warning:  Undefined variable $ref in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 56
+[11-Jan-2024 22:43:15 Asia/Calcutta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB_Functions::student_register(), 11 passed in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 72 and exactly 12 expected in /home/bringyourbuddy/public_html/phpScript/db_functions.php:34
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/controllers.php(72): DB_Functions->student_register()
+#1 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 34
+[11-Jan-2024 22:45:24 Asia/Calcutta] PHP Warning:  Undefined array key "ref_code" in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 55
+[11-Jan-2024 22:45:24 Asia/Calcutta] PHP Warning:  Undefined variable $ref in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 56
+[11-Jan-2024 22:45:24 Asia/Calcutta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB_Functions::student_register(), 11 passed in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 72 and exactly 12 expected in /home/bringyourbuddy/public_html/phpScript/db_functions.php:34
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/controllers.php(72): DB_Functions->student_register()
+#1 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 34
+[11-Jan-2024 22:54:09 Asia/Calcutta] PHP Warning:  Undefined array key "ref_code" in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 55
+[11-Jan-2024 22:54:09 Asia/Calcutta] PHP Warning:  Undefined variable $ref in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 56
+[11-Jan-2024 22:54:09 Asia/Calcutta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB_Functions::student_register(), 11 passed in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 72 and exactly 12 expected in /home/bringyourbuddy/public_html/phpScript/db_functions.php:34
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/controllers.php(72): DB_Functions->student_register()
+#1 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 34
+[12-Jan-2024 00:31:43 Asia/Calcutta] PHP Warning:  Undefined variable $ref in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 56
+[12-Jan-2024 00:31:43 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[12-Jan-2024 00:31:43 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[12-Jan-2024 00:31:43 Asia/Calcutta] PHP Warning:  Undefined variable $ref_code in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 42
+[12-Jan-2024 00:31:43 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '')' at line 3 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:42
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(42): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/controllers.php(73): DB_Functions->student_register()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 42
+[12-Jan-2024 00:32:48 Asia/Calcutta] PHP Warning:  Undefined variable $ref in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 56
+[12-Jan-2024 00:33:58 Asia/Calcutta] PHP Warning:  Undefined variable $ref_code in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 42
+[12-Jan-2024 00:33:58 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '')' at line 3 in /home/bringyourbuddy/public_html/phpScript/db_functions.php:42
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/db_functions.php(42): mysqli_query()
+#1 /home/bringyourbuddy/public_html/phpScript/controllers.php(73): DB_Functions->student_register()
+#2 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/db_functions.php on line 42
+[15-Jan-2024 14:44:22 Asia/Calcutta] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'bringyourbuddy_user'@'localhost' (using password: YES) in /home/bringyourbuddy/public_html/phpScript/DB_Connect.php:24
+Stack trace:
+#0 /home/bringyourbuddy/public_html/phpScript/DB_Connect.php(24): mysqli_connect()
+#1 /home/bringyourbuddy/public_html/phpScript/db_functions.php(18): DB_CONNECT->connect()
+#2 /home/bringyourbuddy/public_html/phpScript/controllers.php(27): DB_Functions->__construct()
+#3 {main}
+  thrown in /home/bringyourbuddy/public_html/phpScript/DB_Connect.php on line 24
+[25-Jan-2024 12:27:55 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 12:27:55 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:25:09 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:25:09 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:37:59 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:37:59 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:41:54 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:41:54 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:42:13 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 13:42:13 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 14:04:15 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 14:04:15 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 15:02:43 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[25-Jan-2024 15:02:43 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[28-Jan-2024 20:22:38 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[28-Jan-2024 20:22:38 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[29-Jan-2024 10:49:37 Asia/Calcutta] PHP Warning:  Undefined array key "gender" in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 46
+[29-Jan-2024 10:49:37 Asia/Calcutta] PHP Warning:  Undefined variable $check in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
+[29-Jan-2024 10:49:37 Asia/Calcutta] PHP Warning:  Trying to access array offset on value of type null in /home/bringyourbuddy/public_html/phpScript/controllers.php on line 64
