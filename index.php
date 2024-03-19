@@ -235,7 +235,7 @@
 
               <div class="col-md-6">
                 <div class="form-outline mb-4">
-                  
+
                   <label class="form-label" for="form3Example1n">Whatsapp</label>
                   <input type="tel" id="form3Example1n" name="whtp_number" class="form-control form-control-lg" />
                 </div>
@@ -297,43 +297,29 @@
   <section id="top-collection" class="my-5">
     <div class="container">
       <h2 class="my-5 fw-bold">Top Collections</h2>
-      <div class="row">
-
+      <div>
         <?php
         for ($i = 0; $i < count($courses_array); $i++) {
         ?>
-         
-            <div class="col-md-3">
-              <a href="uni_list.php" class="h-100">
-                <div class="mb-3">
-                  <div class="bg-image" style="max-width: 262px !important; position:relative; margin: 0px auto; border-radius: 10px !important">
-                    <img src="./assets/images/unides/uni_5.jpg" class="img-fluid d-block mx-auto" />
-                    <div class="position-absolute bottom-0  w-100" style="background-color: rgb(12 12 12 / 77%);">
-                      <p class="p-2 m-0 text-white">Best <?php echo $courses_array[$i]['course_category']; ?> Colleges in India</p>
-                    </div>
+
+          <div class="col-md-3">
+            <a href="uni_list.php" class="h-100">
+              <div class="mb-3">
+                <div class="bg-image" style="max-width: 262px !important; position:relative; margin: 0px auto; border-radius: 10px !important">
+                  <img src="./assets/images/unides/uni_5.jpg" class="img-fluid d-block mx-auto" />
+                  <div class="position-absolute bottom-0  w-100" style="background-color: rgb(12 12 12 / 77%);">
+                    <p class="p-2 m-0 text-white">Best <?php echo $courses_array[$i]['course_category']; ?> Colleges in India</p>
                   </div>
                 </div>
-              </a>
-            </div>
-         
+              </div>
+            </a>
+          </div>
 
 
 
 
-          <!-- <a href="view_cat_courses.php?cat_id=<?php echo $courses_array[$i]['id']; ?>">
-            <div class="col-md-3">
-              <a href="uni_list.php" class="h-100">
-                <div class="mb-3">
-                  <div class="bg-image" style="max-width: 262px !important; position:relative; margin: 0px auto; border-radius: 10px !important">
-                    <img src="./assets/images/unides/uni_5.jpg" class="img-fluid d-block mx-auto" />
-                    <div class="position-absolute bottom-0  w-100" style="background-color: rgb(12 12 12 / 77%);">
-                      <p class="p-2 m-0 text-white">Best <?php echo $courses_array[$i]['course_category']; ?> Colleges in India</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </a> -->
+
+
 
 
         <?php
@@ -341,6 +327,10 @@
         }
 
         ?>
+      </div>
+      <div class="row">
+
+
 
         <div class="col-md-3">
           <a href="uni_list.php" class="h-100">
