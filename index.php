@@ -297,7 +297,7 @@
   <section id="top-collection" class="my-5">
     <div class="container">
       <h2 class="my-5 fw-bold">Top Collections</h2>
-      <div class="row">
+      <div class="row g-3">
 
         <?php
         for ($i = 0; $i < count($courses_array); $i++) {
