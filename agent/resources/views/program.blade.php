@@ -745,6 +745,7 @@
                     $("#studentxgender").text(response.data.gender);
                     $("#studentxphone").text(response.data.phone_no);
                     $("#studentxemail").text(response.data.email);
+                    $("frm_stu_id").val(response.data.id);
                 }
             });
 
@@ -770,6 +771,9 @@
                     $("#anfeex").text(response.data.anul_fee_without_hos);
                     $("#rfeex").text(response.data.reg_fees);
                     $("#durx").text(`${response.data.dur_month} months/ ${response.data.dur_sem} sem/ ${response.data.dur_year} years`);
+                    $("#eligx").text(response.data.course_eligibility);
+                    $("#frm_uni_id").val(response.data.uni_id)
+                    $("#frm_course_id").val(response.data.course_id)
                     $("#eligx").text(response.data.course_eligibility);
                     $("#uni_logo").attr("src", `https://new.bringyourbuddy.in/admin/public/uploads/university_logo/${response.uni_logo}`);
 
@@ -857,11 +861,11 @@
                     $("#dur").text(response.course_duration_month + ' month / ' + response.course_duration_sem + ' sem / ' + response.course_duration_year + ' yrs')
                     $("#elig").text(response.course_eligibility)
 
-                    $("#anfee").text(response.anul_fee_without_hos)
-                    $("#rfee").text(response.reg_fees)
-                    $("#loc").text((response.city) + " " + (response.state))
-                    $("#cloc").text(response.city)
-                    $("#univ_name").text(response.uni_name)
+                    $("#anfee").text(response.anul_fee_without_hos);
+                    $("#rfee").text(response.reg_fees);
+                    $("#loc").text((response.city) + " " + (response.state));
+                    $("#cloc").text(response.city);
+                    $("#univ_name").text(response.uni_name);
 
                     $('#create_application').modal('show');
 
