@@ -500,7 +500,7 @@
                                                         <div class="over" style="overflow: auto; height: 500!important">
                                                             <div class="card rounded-3 shadow border border-dark p-3 mb-3">
                                                                 <div class="d-flex gap-3 align-items-center">
-                                                                    <img src="assets/img/SCC_Logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
+                                                                    <img src="https://new.bringyourbuddy.in/admin/public/uploads/university_logo/dummy_logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
                                                                     <div>
                                                                         <div class="fs-6 text-dark " id="univ_name"></div>
                                                                         <!-- <div class="text-secondary" style="font-size: 12px !important;">Windsor, Ontario, CA</div> -->
