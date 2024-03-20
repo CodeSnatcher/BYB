@@ -16,7 +16,7 @@ use App\Models\StudentEligibilityModel;
 use App\Models\CoursesModel;
 use App\Models\Course_Type;
 use App\Models\Course_Category;
-use App\Models\StudentApplication;
+use App\Models\Application_model
 
 
 use Illuminate\Support\Facades\Log;
