@@ -767,11 +767,11 @@
                     $("#uni_namex").text(response.data.uni_name);
                     $("#uni_logox").text(response.data.uni_logo);
                     $("#crs_namex").text(response.data.course_name);
-                    $("#locx").text(`${response.data.uni_state} ${response.data.uni_city}`);
-                    $("#anfeex").text(response.data.anfee);
-                    $("#rfeex").text(response.data.rfee);
+                    $("#locx").text(`${response.data.state} ${response.data.city}`);
+                    $("#anfeex").text(response.data.anul_fee_without_hos);
+                    $("#rfeex").text(response.data.reg_fees);
                     $("#durx").text(`${response.data.dur_month} months/ ${response.data.dur_sem} sem/ ${response.data.dur_year} years`);
-                    $("#eligx").text(response.data.eligibility);
+                    $("#eligx").text(response.data.course_eligibility);
                     $('#gen_app').modal('show');
                 }
             });
