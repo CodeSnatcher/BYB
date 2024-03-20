@@ -736,7 +736,7 @@
                 type: "POST",
                 url: '{{url("/")}}/getstudentdata',
                 data: {
-                    'student_id': student_id,
+                    'stu_id': $(`#stu${stu_id}`).val(),
                     '_token': '{{csrf_token()}}'
                 },
                 success: function(response) {
