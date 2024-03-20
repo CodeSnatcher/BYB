@@ -283,7 +283,7 @@
 
                                     </button>
                                     <hr class="my-2 ">
-                                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
+                                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#gen_app" type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
 
                                 </div>
 
@@ -385,24 +385,301 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                <div class="modal fade" id="create_application" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Create Application</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+
+                                <div class="formbold-main-wrapper">
+
+                                    <div class="formbold-form-wrapper">
+                                        <form action="{{ url('/') }}/upload_documents" method="post" enctype="multipart/form-data">
+                                            <div class="formbold-steps ">
+                                                <ul>
+                                                    <li class="formbold-step-menu1 active">
+                                                        <span>1</span>
+                                                        Courses
+                                                    </li>
+                                                    <li class="formbold-step-menu2">
+                                                        <span>2</span>
+                                                        Student
+                                                    </li>
+                                                    <li class="formbold-step-menu3">
+                                                        <span>3</span>
+                                                        Documents
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="formbold-form-step-1 active">
+
+                                                @csrf
+
+                                                @if ($errors->any())
+
+                                                <div class="alert alert-danger">
+
+                                                    <ul>
+
+                                                        @foreach ($errors->all() as $error)
+
+                                                        <li>{{ $error }}</li>
+
+                                                        @endforeach
+
+                                                    </ul>
+
+                                                </div>
+
+                                                @endif
+
+                                                @if(session('success'))
+
+                                                <div class="alert alert-primary">
+
+                                                    {{ session('success') }}
+
+                                                </div>
+
+                                                @endif
+
+
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-12">
+
+
+                                                        <div class="card rounded-3 shadow p-3 mb-3">
+                                                            <div class="d-flex gap-3 align-items-center">
+                                                                <img src="assets/img/SCC_Logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
+                                                                <div>
+                                                                    <div class="fs-6 text-dark " id="univ_name"></div>
+                                                                    <!-- <div class="text-secondary" style="font-size: 12px !important;">Windsor, Ontario, CA</div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="fs-6 mt-3">Eligibilty : <span id="elig"></span></div>
+                                                            <div class="text-dark mb-0 fs-5" id="crs_name"></div>
+                                                            <hr class="my-2">
+
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Campus City</div>
+                                                                <div id="loc"></div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Annual Fee </div>
+                                                                <div>$<span id="anfee"></span></div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Application Fee</div>
+                                                                <div>$<span id="rfee"></span></div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Duration</div>
+                                                                <div id="dur"> </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <input type="text" hidden id="frm_course_id" name="course_id" id="" placeholder="course id">
+                                                <input type="text" hidden id="frm_uni_id" name="uni_id" id="" placeholder="university id">
+
+                                                <!-- <button type="submit" class="btn btn-outline-primary w-100">Submit Application</button> -->
+                                            </div>
+
+                                            <div class="formbold-form-step-2">
+
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-10">
+                                                        <div class="card mb-4 border border-dark">
+                                                            <div class="card-body text-center">
+                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid border" style="width: 100px;">
+                                                                <h5 class="my-3">xxxxxx</h5>
+                                                                <hr>
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <div class="text-dark">Gender</div>
+                                                                    <div>xxxxxxxxx</div>
+                                                                </div>
+                                                                <hr>
+                                                                <hr>
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <div class="text-dark">Email</div>
+                                                                    <div>xxxxxxxx</div>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <div class="text-dark">Phone</div>
+                                                                    <div>xxxxxxxx</div>
+                                                                </div>
+                                                                <hr>
+                                                                <hr>
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <div class="text-dark">Status</div>
+                                                                    <div>xxxxxxx</div>
+                                                                </div>
+                                                                <input type="text" hidden name="stu_id" value="xxxxxx">
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                            </div>
+
+                                            <div class="formbold-form-step-3">
+
+
+                                               
+                                                <div class="card p-3 rounded-3 border border-primary">
+
+
+                                                    <div>
+                                                        <span class="text-dark">10th Certificate</span>
+                                                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#certificate_10" aria-expanded="false" aria-controls="collapseExample">
+                                                            Doc
+                                                        </button>
+                                                        <div class="collapse" id="certificate_10">
+                                                            <div class="card card-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="text-dark"> View Doc </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#update_certificate_10" aria-expanded="false" aria-controls="collapseExample">
+                                                                            Update Document
+                                                                        </button>
+                                                                        <div class="collapse" id="update_certificate_10">
+                                                                            <div class="card card-body">
+
+
+                                                                                <div class="mb-3">
+                                                                                    <label for="exampleFormControlInput1" class="form-label">10th Certificate</label>
+                                                                                    <input type="file" class="form-control" id="new10doc" name="10_certificate" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                                                </div>
+                                                                                <button type="button" onclick='update_10_doc()' class="btn btn-primary form-control">Update</button>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="my-3">
+                                                        <span class="text-dark">12th Certificate</span>
+                                                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#certificate_12" aria-expanded="false" aria-controls="collapseExample">
+                                                            Doc
+                                                        </button>
+                                                        <div class="collapse" id="certificate_12">
+                                                            <div class="card card-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#" target="_blank" class="btn btn-dark me-2 btn-sm"> View Doc </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#update_certificate_12" aria-expanded="false" aria-controls="collapseExample">
+                                                                            Update Document
+                                                                        </button>
+                                                                        <div class="collapse" id="update_certificate_12">
+                                                                            <div class="card card-body">
+                                                                                <input type="text" readonly >
+                                                                                <form action="">
+                                                                                    @csrf
+                                                                                    <input type="text" name="stu_id" hidden  id="">
+                                                                                    <div class="mb-3">
+                                                                                        <label for="exampleFormControlInput1" class="form-label">12th Certificate</label>
+                                                                                        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                                                    </div>
+                                                                                    <button type="submit" class="btn btn-primary form-control">Update</button>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div>
+                                                        <span class="text-dark">Other Certificate</span>
+                                                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#certificate_other" aria-expanded="false" aria-controls="collapseExample">
+                                                            Doc
+                                                        </button>
+                                                        <div class="collapse" id="certificate_other">
+                                                            <div class="card card-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="{{ asset('uploads/student_document/certificate_other/'.optional($studoc)->certificate_other)}}" target="_blank" class="btn btn-dark me-2 btn-sm"> View Doc </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#update_certificate_other" aria-expanded="false" aria-controls="collapseExample">
+                                                                            Update Document
+                                                                        </button>
+                                                                        <div class="collapse" id="update_certificate_other">
+                                                                            <div class="card card-body">
+                                                                                <input type="text" readonly >
+                                                                                <form action="">
+                                                                                    @csrf
+                                                                                    <input type="text" name="stu_id" hidden  id="">
+                                                                                    <div class="mb-3">
+                                                                                        <label for="exampleFormControlInput1" class="form-label">Other Certificate</label>
+                                                                                        <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                                                    </div>
+                                                                                    <button type="submit" class="btn btn-primary form-control">Update</button>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                               
+
+                                            </div>
+
+
+                                            <div class="formbold-form-btn-wrapper">
+                                                <button class="formbold-back-btn">
+                                                    Back
+                                                </button>
+
+                                                <button class="formbold-btn">
+                                                    Next Step
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1675_1807)">
+                                                            <path d="M10.7814 7.33312L7.20541 3.75712L8.14808 2.81445L13.3334 7.99979L8.14808 13.1851L7.20541 12.2425L10.7814 8.66645H2.66675V7.33312H10.7814Z" fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1675_1807">
+                                                                <rect width="16" height="16" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
-
 
 
                 <!-- Footer -->
