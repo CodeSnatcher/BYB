@@ -265,7 +265,7 @@ class CourseController extends Controller
     }
   }
 
-  public function getStudentData(Request $request){
+  public function get_student_data(Request $request){
     $stu_id = $request->stu_id;
     $res = DB::table('student')->where([ 'id' => $stu_id, 'del_status' => 0])->first();
     if ($res) {
