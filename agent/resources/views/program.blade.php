@@ -297,7 +297,7 @@
 
                                     </button>
                                     <hr class="my-2 ">
-                                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#gen_app" type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
+                                    <button class="btn btn-outline-primary w-100" onclick='course({{$coursecategory->course_id}},{{$coursecategory->uni_id}})'  type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
 
                                 </div>
 
@@ -500,31 +500,31 @@
                                                         <div class="over" style="overflow: auto; height: 500!important">
                                                             <div class="card rounded-3 shadow border border-dark p-3 mb-3">
                                                                 <div class="d-flex gap-3 align-items-center">
-                                                                    <img src="https://new.bringyourbuddy.in/admin/public/uploads/university_logo/dummy_logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
+                                                                    <img id="uni_logox" src="https://new.bringyourbuddy.in/admin/public/uploads/university_logo/dummy_logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
                                                                     <div>
-                                                                        <div class="fs-6 text-dark " id="univ_name"></div>
+                                                                        <div class="fs-6 text-dark " id="uni_namex"></div>
                                                                         <!-- <div class="text-secondary" style="font-size: 12px !important;">Windsor, Ontario, CA</div> -->
                                                                     </div>
                                                                 </div>
-                                                                <div class="fs-6 mt-3">Eligibilty : <span id="elig"></span></div>
-                                                                <div class="text-dark mb-0 fs-5" id="crs_name"></div>
+                                                                <div class="fs-6 mt-3">Eligibilty : <span id="eligx"></span></div>
+                                                                <div class="text-dark mb-0 fs-5" id="crs_namex"></div>
                                                                 <hr class="my-2">
 
                                                                 <div class="d-flex justify-content-between mb-3">
                                                                     <div class="fw-bold">Campus City</div>
-                                                                    <div id="loc"></div>
+                                                                    <div id="locx"></div>
                                                                 </div>
                                                                 <div class="d-flex justify-content-between mb-3">
                                                                     <div class="fw-bold">Annual Fee </div>
-                                                                    <div>$<span id="anfee"></span></div>
+                                                                    <div>$<span id="anfeex"></span></div>
                                                                 </div>
                                                                 <div class="d-flex justify-content-between mb-3">
                                                                     <div class="fw-bold">Application Fee</div>
-                                                                    <div>$<span id="rfee"></span></div>
+                                                                    <div>$<span id="rfeex"></span></div>
                                                                 </div>
                                                                 <div class="d-flex justify-content-between mb-3">
                                                                     <div class="fw-bold">Duration</div>
-                                                                    <div id="dur"> </div>
+                                                                    <div id="durx"> </div>
                                                                 </div>
 
                                                             </div>
@@ -741,14 +741,43 @@
                 },
                 success: function(response) {
 
-                    $("#studentxname").text(response.name);
-                    $("#studentxgender").text(response.gender);
-                    $("#studentxphone").text(response.phone_no);
-                    $("#studentxemail").text(response.email);
+                    $("#studentxname").text(response.data.name);
+                    $("#studentxgender").text(response.data.gender);
+                    $("#studentxphone").text(response.data.phone_no);
+                    $("#studentxemail").text(response.data.email);
                 }
             });
 
         }
+        
+        function course(course_id, uni_id) {
+            alert(`course_id : ${course_id}`);
+            alert(`uni_id : ${uni_id}`);
+
+            $.ajax({
+                type: "POST", 
+                url: '{{url("/")}}/getcoursedata',
+                data: {
+                    'course_id': course_id,
+                    'uni_id': uni_id,
+                    '_token': '{{csrf_token()}}'
+                },
+                success: function(response) {
+
+                    $("#uni_namex").text(response.data.uni_name);
+                    $("#uni_logox").text(response.data.uni_logo);
+                    $("#crs_namex").text(response.data.course_name);
+                    $("#locx").text(`${response.data.uni_state} ${response.data.uni_city}`);
+                    $("#anfeex").text(response.data.anfee);
+                    $("#rfeex").text(response.data.rfee);
+                    $("#durx").text(`${response.data.dur_month} months/ ${response.data.dur_sem} sem/ ${response.data.dur_year} years`);
+                    $("#eligx").text(response.data.eligibility);
+                    $('#gen_app').modal('show');
+                }
+            });
+
+        }
+
 
 
         function getData(course_id, uni_id) {

@@ -279,4 +279,27 @@ class CourseController extends Controller
       $this->output($response);
     }
   }
+
+  public function getcoursedata(Request $request){
+    $where = array('courses.id' => $request->course_id, 'universities.id' => $request->uni_id);
+    $data = DB::table('university_courses')
+      ->join('universities', 'university_courses.uni_id', '=', 'universities.id')
+      ->join('courses', 'university_courses.course_id', '=', 'courses.id')
+      ->join('course_category', 'courses.course_category', '=', 'course_category.id')
+      ->join('course_type', 'course_type.id', '=', 'courses.course_type')
+      ->select('universities.id as uid', 'universities.uni_logo', 'universities.uni_name', 'universities.source_country', 'universities.state', 'universities.city', 'course_type.course_eligibility', 'courses.id as cid', 'course_type.type', 'course_category.course_category', 'university_courses.anul_fee_without_hos', 'university_courses.reg_fees', 'courses.course_name', 'courses.course_description', 'courses.course_trade', 'courses.course_eligibility', 'courses.course_duration_year', 'courses.course_duration_sem', 'courses.course_duration_month')
+      ->where($where)
+      ->first();
+
+      if ($data) {
+        $response['success'] = 1;
+        $response['success_msg'] = ' Added successfully.';
+        $response['data'] = $data;
+        $this->output($response);
+      } else {
+        $response['error'] = 1;
+        $response['error_msg'] = 'Somthing went wrong!';
+        $this->output($response);
+      }
+  }
 }

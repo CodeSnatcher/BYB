@@ -115,8 +115,9 @@ Route::post('del_application', [ProfileController::class, 'del_application']);
 Route::post('upload_documents', [CourseController::class, 'add_documents']);
 
 Route::post('getstudentdata', [CourseController::class, 'get_student_data']);
-// application end
 
+Route::post('getcoursedata', [CourseController::class, 'getcoursedata']);
+// application end
 
 
 Route::post('/ol_gen_mail', [SendMailController::class, 'index']);
