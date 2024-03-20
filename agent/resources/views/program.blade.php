@@ -767,33 +767,33 @@
 
         function getData(course_id, uni_id) {
 
-$.ajax({
-    type: "POST",
-    url: '{{url("/")}}/getCourseDataCardVise',
-    data: {
-        'course_id': course_id,
-        'uni_id': uni_id,
-        '_token': '{{csrf_token()}}'
-    },
-    success: function(response) {
+            $.ajax({
+                type: "POST",
+                url: '{{url("/")}}/getCourseDataCardVise',
+                data: {
+                    'course_id': course_id,
+                    'uni_id': uni_id,
+                    '_token': '{{csrf_token()}}'
+                },
+                success: function(response) {
 
-        $("#mainheading").text(response.course_name);
-        $("#program_summary").text(response.course_description);
-        $("#dur_month").text(response.course_duration_month);
-        $("#dur_sem").text(response.course_duration_sem);
-        $("#dur_year").text(response.course_duration_year);
-        $("#eligibity").text(response.course_eligibility);
-        $("#summary").text(response.course_description);
-        $("#annual_fee").text(response.anul_fee_without_hos);
-        $("#app_fee").text(response.reg_fees);
-        $("#location").text((response.city) + " " + (response.state));
-        $("#uni_loc").text((response.city) + " " + (response.state));
-        $("#universityName").text(response.uni_name);
-        $("#uni_logo").attr("src", "https://new.bringyourbuddy.in/admin/public/uploads/university_logo/".response.uni_logo);
-    }
-});
+                    $("#mainheading").text(response.course_name);
+                    $("#program_summary").text(response.course_description);
+                    $("#dur_month").text(response.course_duration_month);
+                    $("#dur_sem").text(response.course_duration_sem);
+                    $("#dur_year").text(response.course_duration_year);
+                    $("#eligibity").text(response.course_eligibility);
+                    $("#summary").text(response.course_description);
+                    $("#annual_fee").text(response.anul_fee_without_hos);
+                    $("#app_fee").text(response.reg_fees);
+                    $("#location").text((response.city) + " " + (response.state));
+                    $("#uni_loc").text((response.city) + " " + (response.state));
+                    $("#universityName").text(response.uni_name);
+                    $("#uni_logo").attr("src", "https://new.bringyourbuddy.in/admin/public/uploads/university_logo/".response.uni_logo);
+                }
+            });
 
-}
+        }
 
 
         function update_10_doc(stu_id) {
