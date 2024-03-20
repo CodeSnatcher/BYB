@@ -279,12 +279,11 @@
 
 
 
-                                    <!-- <button class="btn btn-primary w-100" type="button" onclick='getData({{$coursecategory->course_id}},{{$coursecategory->uni_id}})'>Details</button> -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Create Application +
+                                    <button class="btn btn-primary w-100" type="button" onclick='getData({{$coursecategory->course_id}},{{$coursecategory->uni_id}})'>Details</button>
+                                   
                                     </button>
                                     <hr class="my-2 ">
-                                    <button class="btn btn-outline-primary w-100" type="button" onclick='getID({{$coursecategory->course_id}},{{$coursecategory->uni_id}})'> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
+                                    <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
 
                                 </div>
 
