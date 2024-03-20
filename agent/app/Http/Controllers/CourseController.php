@@ -271,6 +271,7 @@ class CourseController extends Controller
     if ($res) {
       $response['success'] = 1;
       $response['success_msg'] = ' Added successfully.';
+      $response['data'] = $res;
       $this->output($response);
     } else {
       $response['error'] = 1;
