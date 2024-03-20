@@ -500,7 +500,7 @@
                                                         <div class="over" style="overflow: auto; height: 500!important">
                                                             <div class="card rounded-3 shadow border border-dark p-3 mb-3">
                                                                 <div class="d-flex gap-3 align-items-center">
-                                                                    <img id="uni_logox" src="https://new.bringyourbuddy.in/admin/public/uploads/university_logo/dummy_logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
+                                                                    <img id="uni_logox"  class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
                                                                     <div>
                                                                         <div class="fs-6 text-dark " id="uni_namex"></div>
                                                                         <!-- <div class="text-secondary" style="font-size: 12px !important;">Windsor, Ontario, CA</div> -->
@@ -772,7 +772,7 @@
                     $("#rfeex").text(response.data.reg_fees);
                     $("#durx").text(`${response.data.dur_month} months/ ${response.data.dur_sem} sem/ ${response.data.dur_year} years`);
                     $("#eligx").text(response.data.course_eligibility);
-                    $("#uni_logo").attr("src", `https://new.bringyourbuddy.in/admin/public/uploads/university_logo/${response.uni_logo}`);
+                    $("#uni_logox").attr("src", `https://new.bringyourbuddy.in/admin/public/uploads/university_logo/${response.uni_logo}`);
 
                     $('#gen_app').modal('show');
                 }
