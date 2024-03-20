@@ -212,6 +212,7 @@
         .formbold-btn:hover {
             box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
         }
+
         .label {
             width: 100%;
         }
@@ -465,8 +466,8 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12">
-                                                        <label class="h-100 label">
-                                                            <input type="radio" name="crs_spe" value="1" class="card-input-element" />
+                                                        <label class="label">
+                                                            <input type="radio" name="stu_id" value="1" class="card-input-element" />
 
                                                             <div class="card p-2 rounded-3 mb-3 border">
                                                                 <div class="d-flex gap-3  ">
