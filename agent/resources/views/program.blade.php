@@ -213,7 +213,7 @@
             box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
         }
 
-        .label {
+        label {
             width: 100%;
         }
 
@@ -466,7 +466,7 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12">
-                                                        <label class="label">
+                                                        <label>
                                                             <input type="radio" name="stu_id" value="1" class="card-input-element" />
 
                                                             <div class="card p-2 rounded-3 mb-3 border">
@@ -477,66 +477,7 @@
                                                             </div>
 
                                                         </label>
-                                                        <div class="card p-2 rounded-3 mb-3 border">
-                                                            <div class="d-flex gap-3  ">
-                                                                <div class="text-dark fs-5 text-primary fw-bold">#1</div>
-                                                                <div class="text-dark fs-5">Aditya Singh</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card p-2 rounded-3 mb-4 border">
-                                                            <div class="d-flex gap-3 ">
-                                                                <div class="text-dark fs-5 text-primary fw-bold">#1</div>
-                                                                <div class="text-dark fs-5">Aditya Singh</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card p-2 rounded-3 mb-4 border">
-                                                            <div class="d-flex gap-3 ">
-                                                                <div class="text-dark fs-5 text-primary fw-bold">#1</div>
-                                                                <div class="text-dark fs-5">Aditya Singh</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card p-2 rounded-3 mb-4 border">
-                                                            <div class="d-flex gap-3 ">
-                                                                <div class="text-dark fs-5 text-primary fw-bold">#1</div>
-                                                                <div class="text-dark fs-5">Aditya Singh</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card p-2 rounded-3 mb-4 border">
-                                                            <div class="d-flex gap-3 ">
-                                                                <div class="text-dark fs-5 text-primary fw-bold">#1</div>
-                                                                <div class="text-dark fs-5">Aditya Singh</div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- <div class="card rounded-3 shadow p-3 mb-3">
-                                                            <div class="d-flex gap-3 align-items-center">
-                                                                <img src="assets/img/SCC_Logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
-                                                                <div>
-                                                                    <div class="fs-6 text-dark " id="univ_name"></div>
-                                                                 
-                                                                </div>
-                                                            </div>
-                                                            <div class="fs-6 mt-3">Eligibilty : <span id="elig"></span></div>
-                                                            <div class="text-dark mb-0 fs-5" id="crs_name"></div>
-                                                            <hr class="my-2">
 
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <div class="fw-bold">Campus City</div>
-                                                                <div id="loc"></div>
-                                                            </div>
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <div class="fw-bold">Annual Fee </div>
-                                                                <div>$<span id="anfee"></span></div>
-                                                            </div>
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <div class="fw-bold">Application Fee</div>
-                                                                <div>$<span id="rfee"></span></div>
-                                                            </div>
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <div class="fw-bold">Duration</div>
-                                                                <div id="dur"> </div>
-                                                            </div>
-
-                                                        </div> -->
                                                     </div>
                                                 </div>
                                                 <input type="text" hidden id="frm_course_id" name="course_id" id="" placeholder="course id">
