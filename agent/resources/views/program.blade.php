@@ -531,29 +531,25 @@
                                                             <div class="card mb-4 border border-dark">
                                                                 <div class="card-body text-center">
                                                                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid border" style="width: 100px;">
-                                                                    <h5 class="my-3">xxxxxx</h5>
+                                                                    <h5 id="studentxname" class="my-3">xxxxxx</h5>
                                                                     <hr>
                                                                     <div class="d-flex justify-content-between mb-3">
                                                                         <div class="text-dark">Gender</div>
-                                                                        <div>xxxxxxxxx</div>
+                                                                        <div id="studentxgender"></div>
                                                                     </div>
                                                                     <hr>
-                                                                    <hr>
+                                                                   
                                                                     <div class="d-flex justify-content-between mb-3">
                                                                         <div class="text-dark">Email</div>
-                                                                        <div>xxxxxxxx</div>
+                                                                        <div id="studentxemail"></div>
                                                                     </div>
                                                                     <hr>
                                                                     <div class="d-flex justify-content-between mb-3">
                                                                         <div class="text-dark">Phone</div>
-                                                                        <div>xxxxxxxx</div>
+                                                                        <div id="studentxphone"></div>
                                                                     </div>
                                                                     <hr>
                                                                     <hr>
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <div class="text-dark">Status</div>
-                                                                        <div>xxxxxxx</div>
-                                                                    </div>
                                                                     <input type="text" hidden name="stu_id" value="xxxxxx">
                                                                 </div>
                                                             </div>
@@ -738,27 +734,17 @@
 
             $.ajax({
                 type: "POST",
-                url: '{{url("/")}}/getCourseDataCardVise',
+                url: '{{url("/")}}/getstudentdata',
                 data: {
-                    'course_id': course_id,
-                    'uni_id': uni_id,
+                    'student_id': student_id,
                     '_token': '{{csrf_token()}}'
                 },
                 success: function(response) {
 
-                    $("#mainheading").text(response.course_name);
-                    $("#program_summary").text(response.course_description);
-                    $("#dur_month").text(response.course_duration_month);
-                    $("#dur_sem").text(response.course_duration_sem);
-                    $("#dur_year").text(response.course_duration_year);
-                    $("#eligibity").text(response.course_eligibility);
-                    $("#summary").text(response.course_description);
-                    $("#annual_fee").text(response.anul_fee_without_hos);
-                    $("#app_fee").text(response.reg_fees);
-                    $("#location").text((response.city) + " " + (response.state));
-                    $("#uni_loc").text((response.city) + " " + (response.state));
-                    $("#universityName").text(response.uni_name);
-                    $("#uni_logo").attr("src", "https://new.bringyourbuddy.in/admin/public/uploads/university_logo/".response.uni_logo);
+                    $("#studentxname").text(response.name);
+                    $("#studentxgender").text(response.gender);
+                    $("#studentxphone").text(response.phone_no);
+                    $("#studentxemail").text(response.email);
                 }
             });
 

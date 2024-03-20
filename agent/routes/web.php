@@ -113,6 +113,8 @@ Route::post('create_application', [ProfileController::class, 'add_application'])
 Route::post('del_application', [ProfileController::class, 'del_application']);
 
 Route::post('upload_documents', [CourseController::class, 'add_documents']);
+
+Route::post('getstudentdata', [CourseController::class, 'get_student_data']);
 // application end
 
 
