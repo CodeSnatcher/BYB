@@ -217,9 +217,7 @@
             width: 100%;
         }
 
-        .card-input-element {
-            display: none;
-        }
+        
 
         .card-input:hover {
             cursor: pointer !important;
