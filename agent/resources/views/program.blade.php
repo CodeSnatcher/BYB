@@ -734,7 +734,7 @@
 
     <script>
         function student(stu_id) {
-            alert($(`#stu`));
+            alert($(`#stu`).val());
 
             $.ajax({
                 type: "POST",
