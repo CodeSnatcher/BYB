@@ -468,7 +468,7 @@
                                                             
                                                             <div class="card p-2 rounded-3 mb-3 border">
                                                                 <div class="d-flex gap-3  ">
-                                                                    <input type="radio" name="stu_id" value="1" class="card-input-element" />
+                                                                    <input type="radio" name="stu_id" value="1" class="card-input-element p-3" />
                                                                     <div class="text-dark fs-5 text-primary fw-bold">#1</div>
                                                                     <div class="text-dark fs-5">Aditya Singh</div>
                                                                 </div>
@@ -481,7 +481,7 @@
                                                 <input type="text" hidden id="frm_course_id" name="course_id" id="" placeholder="course id">
                                                 <input type="text" hidden id="frm_uni_id" name="uni_id" id="" placeholder="university id">
 
-                                                <!-- <button type="submit" class="btn btn-outline-primary w-100">Submit Application</button> -->
+                                                
                                             </div>
 
                                             <div class="formbold-form-step-2">
