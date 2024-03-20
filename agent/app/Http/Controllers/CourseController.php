@@ -287,7 +287,7 @@ class CourseController extends Controller
       ->join('courses', 'university_courses.course_id', '=', 'courses.id')
       ->join('course_category', 'courses.course_category', '=', 'course_category.id')
       ->join('course_type', 'course_type.id', '=', 'courses.course_type')
-      ->select('universities.id as uid', 'universities.uni_logo', 'universities.uni_name', 'universities.source_country', 'universities.state', 'universities.city', 'course_type.course_eligibility', 'courses.id as course_id', 'course_type.type', 'course_category.course_category', 'university_courses.anul_fee_without_hos', 'university_courses.reg_fees', 'courses.course_name', 'courses.course_description', 'courses.course_trade', 'courses.course_eligibility', 'courses.course_duration_year as dur_year', 'courses.course_duration_sem as dur_sem', 'courses.course_duration_month as dur_month')
+      ->select('universities.id as uni_id', 'universities.uni_logo', 'universities.uni_name', 'universities.source_country', 'universities.state', 'universities.city', 'course_type.course_eligibility', 'courses.id as course_id', 'course_type.type', 'course_category.course_category', 'university_courses.anul_fee_without_hos', 'university_courses.reg_fees', 'courses.course_name', 'courses.course_description', 'courses.course_trade', 'courses.course_eligibility', 'courses.course_duration_year as dur_year', 'courses.course_duration_sem as dur_sem', 'courses.course_duration_month as dur_month')
       ->where($where)
       ->first();
 
