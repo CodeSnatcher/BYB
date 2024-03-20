@@ -497,6 +497,36 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-10">
+                                                    <div class="card rounded-3 shadow p-3 mb-3">
+                                                            <div class="d-flex gap-3 align-items-center">
+                                                                <img src="assets/img/SCC_Logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
+                                                                <div>
+                                                                    <div class="fs-6 text-dark " id="univ_name"></div>
+                                                                    <!-- <div class="text-secondary" style="font-size: 12px !important;">Windsor, Ontario, CA</div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="fs-6 mt-3">Eligibilty : <span id="elig"></span></div>
+                                                            <div class="text-dark mb-0 fs-5" id="crs_name"></div>
+                                                            <hr class="my-2">
+
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Campus City</div>
+                                                                <div id="loc"></div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Annual Fee </div>
+                                                                <div>$<span id="anfee"></span></div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Application Fee</div>
+                                                                <div>$<span id="rfee"></span></div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3">
+                                                                <div class="fw-bold">Duration</div>
+                                                                <div id="dur"> </div>
+                                                            </div>
+
+                                                        </div>
                                                         <div class="card mb-4 border border-dark">
                                                             <div class="card-body text-center">
                                                                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid border" style="width: 100px;">
