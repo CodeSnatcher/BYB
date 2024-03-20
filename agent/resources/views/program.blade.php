@@ -772,6 +772,8 @@
                     $("#rfeex").text(response.data.reg_fees);
                     $("#durx").text(`${response.data.dur_month} months/ ${response.data.dur_sem} sem/ ${response.data.dur_year} years`);
                     $("#eligx").text(response.data.course_eligibility);
+                    $("#uni_logo").attr("src", `https://new.bringyourbuddy.in/admin/public/uploads/university_logo/${response.uni_logo}`);
+
                     $('#gen_app').modal('show');
                 }
             });
