@@ -189,7 +189,6 @@ class ProfileController extends Controller
       "created_at" =>  date('Y-m-d H:i:s')
 
     );
-
     $res = Application_model::create($data);
 
     if ($res) {
