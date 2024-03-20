@@ -472,7 +472,7 @@
 
                                                             <div class="card p-2 rounded-3 mb-3 border">
                                                                 <div class="d-flex gap-3  ">
-                                                                    <input type="radio" name="stu_id" onchange="studentData({{$studata->id}})" id="stu{{$studata->id}}" value="{{$studata->id}}" class="form-check-input
+                                                                    <input type="radio" name="stu_id" onchange="studentData({{$studata->id}})" id="stu" value="{{$studata->id}}" class="form-check-input
                                                                     
                                                                     " />
                                                                     <div class="text-dark fs-5 text-primary fw-bold">#{{$studata->id}}</div>
@@ -734,7 +734,7 @@
 
     <script>
         function studentdata(stu_id) {
-            alert($(`#stu${stu_id}`));
+            alert($(`#stu`));
 
             $.ajax({
                 type: "POST",
