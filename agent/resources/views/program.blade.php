@@ -450,9 +450,9 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12">
-                                                        <div class="card p-2 rounded-3">
-                                                            <div class="d-flex gap 2">
-                                                                <div class="text-dark fs-5">#1</div>
+                                                        <div class="card p-2 rounded-3 border">
+                                                            <div class="d-flex gap 2 ">
+                                                                <div class="text-dark fs-5 text-primary fw-bold">#1</div>
                                                                 <div class="text-dark fs-5">Aditya</div>
                                                             </div>
                                                         </div>
