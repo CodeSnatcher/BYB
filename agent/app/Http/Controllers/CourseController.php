@@ -40,8 +40,7 @@ class CourseController extends Controller
   public function getPrograms()
   {
     $stuId = session('user_id');
-    $stu_data = User::where('id', $stuId)->first();
-
+    $stu_data = DB::table('student')->where([ 'agent_id' => session('agent_id'), 'del_status' => 0])->get();
     $stu_doc = Student_document::where('stu_id', $stuId)->first();
 
     $where = array('universities.del_status' => 0, 'universities.status' => 1, 'university_courses.status' => 1, 'university_courses.del_status' => 0);

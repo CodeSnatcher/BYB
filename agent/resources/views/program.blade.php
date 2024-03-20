@@ -217,7 +217,7 @@
             width: 100%;
         }
 
-        
+
 
         .card-input:hover {
             cursor: pointer !important;
@@ -464,24 +464,33 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12">
+                                                        @foreach($studata as $key => $studata)
+                                                        @php
+                                                        $key++;
+                                                        @endphp
                                                         <label>
-                                                            
+
                                                             <div class="card p-2 rounded-3 mb-3 border">
                                                                 <div class="d-flex gap-3  ">
-                                                                    <input type="radio" name="stu_id" value="1" class="form-check-input"  />
-                                                                    <div class="text-dark fs-5 text-primary fw-bold">#1</div>
-                                                                    <div class="text-dark fs-5">Aditya Singh</div>
+                                                                    <input type="radio" name="stu_id" value="{{$studata->id}}" class="form-check-input
+                                                                    
+                                                                    " />
+                                                                    <div class="text-dark fs-5 text-primary fw-bold">#{{$studata->id}}</div>
+                                                                    <div class="text-dark fs-5">{{$studata->name}}</div>
                                                                 </div>
                                                             </div>
 
                                                         </label>
+
+                                                        @endforeach
+
 
                                                     </div>
                                                 </div>
                                                 <input type="text" hidden id="frm_course_id" name="course_id" id="" placeholder="course id">
                                                 <input type="text" hidden id="frm_uni_id" name="uni_id" id="" placeholder="university id">
 
-                                                
+
                                             </div>
 
                                             <div class="formbold-form-step-2">
