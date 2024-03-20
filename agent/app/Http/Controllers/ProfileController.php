@@ -16,7 +16,7 @@ use App\Models\StudentEligibilityModel;
 use App\Models\CoursesModel;
 use App\Models\Course_Type;
 use App\Models\Course_Category;
-use App\Models\Application_model
+use App\Models\Application_model;
 
 
 use Illuminate\Support\Facades\Log;
@@ -190,7 +190,7 @@ class ProfileController extends Controller
 
     );
 
-    $res = StudentApplication::create($data);
+    $res = Application_model::create($data);
 
     if ($res) {
 
