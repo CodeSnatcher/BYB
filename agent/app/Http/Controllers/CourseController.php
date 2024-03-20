@@ -302,4 +302,6 @@ class CourseController extends Controller
         $this->output($response);
       }
   }
+
+  
 }

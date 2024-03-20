@@ -297,7 +297,7 @@
 
                                     </button>
                                     <hr class="my-2 ">
-                                    <button class="btn btn-outline-primary w-100" onclick='course({{$coursecategory->course_id}},{{$coursecategory->uni_id}})'  type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
+                                    <button class="btn btn-outline-primary w-100" onclick='course({{$coursecategory->course_id}},{{$coursecategory->uni_id}})' type="button"> Create Application <i class="fa-solid fa-plus ms-2 fs-5"></i></button>
 
                                 </div>
 
@@ -411,7 +411,7 @@
                                 <div class="formbold-main-wrapper">
 
                                     <div class="formbold-form-wrapper">
-                                        <form action="{{ url('/') }}/upload_documents" method="post" enctype="multipart/form-data">
+                                        <form action="{{ url('/') }}/create_application" method="post" enctype="multipart/form-data">
                                             <div class="formbold-steps ">
                                                 <ul>
                                                     <li class="formbold-step-menu1 active">
@@ -487,8 +487,7 @@
 
                                                     </div>
                                                 </div>
-                                                <input type="text" hidden id="frm_course_id" name="course_id" id="" placeholder="course id">
-                                                <input type="text" hidden id="frm_uni_id" name="uni_id" id="" placeholder="university id">
+
 
 
                                             </div>
@@ -526,6 +525,8 @@
                                                                     <div class="fw-bold">Duration</div>
                                                                     <div id="durx"> </div>
                                                                 </div>
+                                                                <input type="text" hidden id="frm_course_id" name="course_id" placeholder="course id">
+                                                                <input type="text" hidden id="frm_uni_id" name="uni_id" placeholder="university id">
 
                                                             </div>
                                                             <div class="card mb-4 border border-dark">
@@ -538,7 +539,7 @@
                                                                         <div id="studentxgender"></div>
                                                                     </div>
                                                                     <hr>
-                                                                   
+
                                                                     <div class="d-flex justify-content-between mb-3">
                                                                         <div class="text-dark">Email</div>
                                                                         <div id="studentxemail"></div>
@@ -549,8 +550,7 @@
                                                                         <div id="studentxphone"></div>
                                                                     </div>
                                                                     <hr>
-                                                                    <hr>
-                                                                    <input type="text" hidden name="stu_id" value="xxxxxx">
+                                                                    <input type="text" hidden name="stu_id" id="frm_stu_id">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -730,7 +730,7 @@
 
     <script>
         function student(stu_id) {
-           
+
 
             $.ajax({
                 type: "POST",
@@ -749,12 +749,12 @@
             });
 
         }
-        
+
         function course(course_id, uni_id) {
-         
+
 
             $.ajax({
-                type: "POST", 
+                type: "POST",
                 url: '{{url("/")}}/getcoursedata',
                 data: {
                     'course_id': course_id,
