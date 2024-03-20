@@ -453,11 +453,16 @@
 
                                                 @if(session('success'))
 
-                                                <div class="alert alert-primary">
+                                                <script>
+                                                    toastMixin.fire({
+                                                        animation: true,
+                                                        title: 'Application Added Successfully'
+                                                    });
+                                                    setTimeout(() => {
 
-                                                    {{ session('success') }}
-
-                                                </div>
+                                                        location.reload();
+                                                    }, 3000)
+                                                </script>
 
                                                 @endif
 
