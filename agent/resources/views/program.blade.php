@@ -212,6 +212,21 @@
         .formbold-btn:hover {
             box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
         }
+        .label {
+            width: 100%;
+        }
+
+        .card-input-element {
+            display: none;
+        }
+
+        .card-input:hover {
+            cursor: pointer !important;
+        }
+
+        .card-input-element:checked+.card-input {
+            box-shadow: 0 0 1px 1px #D93444 !important;
+        }
     </style>
 
 
@@ -450,6 +465,17 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12">
+                                                        <label class="h-100 label">
+                                                            <input type="radio" name="crs_spe" value="1" class="card-input-element" />
+
+                                                            <div class="card p-2 rounded-3 mb-3 border">
+                                                                <div class="d-flex gap-3  ">
+                                                                    <div class="text-dark fs-5 text-primary fw-bold">#1</div>
+                                                                    <div class="text-dark fs-5">Aditya Singh</div>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
                                                         <div class="card p-2 rounded-3 mb-3 border">
                                                             <div class="d-flex gap-3  ">
                                                                 <div class="text-dark fs-5 text-primary fw-bold">#1</div>
@@ -564,7 +590,7 @@
                                             <div class="formbold-form-step-3">
 
 
-                                               
+
                                                 <div class="card p-3 rounded-3 border border-primary">
 
 
@@ -618,10 +644,10 @@
                                                                         </button>
                                                                         <div class="collapse" id="update_certificate_12">
                                                                             <div class="card card-body">
-                                                                                <input type="text" readonly >
+                                                                                <input type="text" readonly>
                                                                                 <form action="">
                                                                                     @csrf
-                                                                                    <input type="text" name="stu_id" hidden  id="">
+                                                                                    <input type="text" name="stu_id" hidden id="">
                                                                                     <div class="mb-3">
                                                                                         <label for="exampleFormControlInput1" class="form-label">12th Certificate</label>
                                                                                         <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -654,10 +680,10 @@
                                                                         </button>
                                                                         <div class="collapse" id="update_certificate_other">
                                                                             <div class="card card-body">
-                                                                                <input type="text" readonly >
+                                                                                <input type="text" readonly>
                                                                                 <form action="">
                                                                                     @csrf
-                                                                                    <input type="text" name="stu_id" hidden  id="">
+                                                                                    <input type="text" name="stu_id" hidden id="">
                                                                                     <div class="mb-3">
                                                                                         <label for="exampleFormControlInput1" class="form-label">Other Certificate</label>
                                                                                         <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -675,7 +701,7 @@
                                                     </div>
 
                                                 </div>
-                                               
+
 
                                             </div>
 
