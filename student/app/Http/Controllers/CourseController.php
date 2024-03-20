@@ -217,8 +217,8 @@ class CourseController extends Controller
       'phone' => 891050913
     ];
 
-    Mail::to(['sharma.himanshu1324@gmail.com'])->send(new e1_app_reg($e1_app_data));
-    Mail::to(['sharma.himanshu1324@gmail.com'])->send(new e2_provisional($e2_pro_data));
+    Mail::to($pdf_data->stu_email)->send(new e1_app_reg($e1_app_data));
+    Mail::to($pdf_data->stu_email)->send(new e2_provisional($e2_pro_data));
 
 
 
