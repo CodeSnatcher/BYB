@@ -730,7 +730,7 @@
 
     <script>
         function student(stu_id) {
-            alert($(`#stu${stu_id}`).val());
+           
 
             $.ajax({
                 type: "POST",
@@ -751,8 +751,7 @@
         }
         
         function course(course_id, uni_id) {
-            alert(`course_id : ${course_id}`);
-            alert(`uni_id : ${uni_id}`);
+         
 
             $.ajax({
                 type: "POST", 
