@@ -402,7 +402,7 @@
                                                 <ul>
                                                     <li class="formbold-step-menu1 active">
                                                         <span>1</span>
-                                                        Courses
+                                                        Select Student
                                                     </li>
                                                     <li class="formbold-step-menu2">
                                                         <span>2</span>
@@ -450,14 +450,18 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-12">
-
-
-                                                        <div class="card rounded-3 shadow p-3 mb-3">
+                                                        <div class="card p-2 rounded-3">
+                                                            <div class="d-flex gap 2">
+                                                                <div class="text-dark fs-5">#1</div>
+                                                                <div class="text-dark fs-5">Aditya</div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="card rounded-3 shadow p-3 mb-3">
                                                             <div class="d-flex gap-3 align-items-center">
                                                                 <img src="assets/img/SCC_Logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
                                                                 <div>
                                                                     <div class="fs-6 text-dark " id="univ_name"></div>
-                                                                    <!-- <div class="text-secondary" style="font-size: 12px !important;">Windsor, Ontario, CA</div> -->
+                                                                 
                                                                 </div>
                                                             </div>
                                                             <div class="fs-6 mt-3">Eligibilty : <span id="elig"></span></div>
@@ -481,7 +485,7 @@
                                                                 <div id="dur"> </div>
                                                             </div>
 
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                                 <input type="text" hidden id="frm_course_id" name="course_id" id="" placeholder="course id">
