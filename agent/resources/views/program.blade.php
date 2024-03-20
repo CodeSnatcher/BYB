@@ -498,7 +498,7 @@
                                                 <div class="row justify-content-center">
                                                     <div class="col-md-10">
                                                         <div class="over" style="overflow: auto; height: 500!important">
-                                                            <div class="card rounded-3 shadow border p-3 mb-3">
+                                                            <div class="card rounded-3 shadow border border-dark p-3 mb-3">
                                                                 <div class="d-flex gap-3 align-items-center">
                                                                     <img src="assets/img/SCC_Logo.png" class="rounded-circle border border-dark" style="width: 60px;" alt="Avatar" />
                                                                     <div>
