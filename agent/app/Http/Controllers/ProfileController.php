@@ -94,7 +94,7 @@ class ProfileController extends Controller
       ->get();
 
 
-    return view('application', ['pagedata' => $data]);
+    return view('application_view', ['pagedata' => $data]);
   }
   public function payment()
   {
