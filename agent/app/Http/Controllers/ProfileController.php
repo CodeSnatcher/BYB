@@ -178,9 +178,7 @@ class ProfileController extends Controller
 
     $data = array(
 
-      "stu_id" => $stuId,
-
-      "cat_id" => $request->cat_id,
+      "stu_id" => $request->stu_id,
 
       "uni_id" => $request->uni_id,
 
