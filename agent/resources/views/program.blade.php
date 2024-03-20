@@ -750,7 +750,7 @@
                     $("#studentxgender").text(response.data.gender);
                     $("#studentxphone").text(response.data.phone_no);
                     $("#studentxemail").text(response.data.email);
-                    $("frm_stu_id").val(response.data.id);
+                    $("#frm_stu_id").val(response.data.id);
                 }
             });
 
