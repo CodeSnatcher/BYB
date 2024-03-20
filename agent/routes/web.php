@@ -108,8 +108,9 @@ Route::post('getCourseDataCardVise', [CourseController::class, 'getCourseDataCar
 
 // application
 
-Route::post('create_application', [ProfileController::class, 'add_application']);
+Route::post('view_application', [ProfileController::class, 'application']);
 
+Route::post('create_application', [ProfileController::class, 'add_application']);
 Route::post('del_application', [ProfileController::class, 'del_application']);
 
 Route::post('upload_documents', [CourseController::class, 'add_documents']);
