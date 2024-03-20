@@ -472,7 +472,7 @@
 
                                                             <div class="card p-2 rounded-3 mb-3 border">
                                                                 <div class="d-flex gap-3  ">
-                                                                    <input type="radio" name="stu_id" value="{{$studata->id}}" class="form-check-input
+                                                                    <input type="radio" name="stu_id" onchange="studentData({{$studata->id}})" id="stu{{$studata->id}}" value="{{$studata->id}}" class="form-check-input
                                                                     
                                                                     " />
                                                                     <div class="text-dark fs-5 text-primary fw-bold">#{{$studata->id}}</div>
@@ -733,7 +733,8 @@
     @include('includes.footer_script')
 
     <script>
-        function getData(course_id, uni_id) {
+        function studentdata(stu_id) {
+            alert($(`#stu${stu_id}`));
 
             $.ajax({
                 type: "POST",
@@ -762,6 +763,38 @@
             });
 
         }
+
+
+        function getData(course_id, uni_id) {
+
+$.ajax({
+    type: "POST",
+    url: '{{url("/")}}/getCourseDataCardVise',
+    data: {
+        'course_id': course_id,
+        'uni_id': uni_id,
+        '_token': '{{csrf_token()}}'
+    },
+    success: function(response) {
+
+        $("#mainheading").text(response.course_name);
+        $("#program_summary").text(response.course_description);
+        $("#dur_month").text(response.course_duration_month);
+        $("#dur_sem").text(response.course_duration_sem);
+        $("#dur_year").text(response.course_duration_year);
+        $("#eligibity").text(response.course_eligibility);
+        $("#summary").text(response.course_description);
+        $("#annual_fee").text(response.anul_fee_without_hos);
+        $("#app_fee").text(response.reg_fees);
+        $("#location").text((response.city) + " " + (response.state));
+        $("#uni_loc").text((response.city) + " " + (response.state));
+        $("#universityName").text(response.uni_name);
+        $("#uni_logo").attr("src", "https://new.bringyourbuddy.in/admin/public/uploads/university_logo/".response.uni_logo);
+    }
+});
+
+}
+
 
         function update_10_doc(stu_id) {
             alert($('#new10doc').val())
